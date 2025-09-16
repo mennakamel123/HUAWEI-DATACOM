@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UNICODE" ?>
+<topo version="1.2.00.510">
+    <devices>
+        <dev id="E712C761-EB42-4d48-AEE2-DD8109E77784" name="R1" poe="0" model="Router" settings="" system_mac="54-89-98-1D-31-48" com_port="2000" bootmode="0" cx="488.000000" cy="138.000000" edit_left="515" edit_top="192">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="2" />
+                <interface sztype="Ethernet" interfacename="GE" count="4" />
+                <interface sztype="Serial" interfacename="Serial" count="4" />
+            </slot>
+        </dev>
+        <dev id="B179C734-D923-4838-955A-85B9FF8BA346" name="PC1" poe="0" model="PC" settings=" -simpc_ip 192.168.1.100  -simpc_mask 255.255.255.0  -simpc_gateway 192.168.1.50  -simpc_mac 54-89-98-FB-75-2B  -simpc_mc_dstip 0.0.0.0  -simpc_mc_dstmac 00-00-00-00-00-00  -simpc_dns1 0.0.0.0  -simpc_dns2 0.0.0.0  -simpc_ipv6 ::  -simpc_prefix 128  -simpc_gatewayv6 ::  -simpc_dhcp_state 0  -simpc_dhcpv6_state 0  -simpc_dns_auto_state 0  -simpc_igmp_version 1  -simpc_group_ip_start 0.0.0.0  -simpc_src_ip_start 0.0.0.0  -simpc_group_num 0  -simpc_group_step 0  -simpc_src_num 0  -simpc_src_step 0  -simpc_type MODE_IS_INCLUDE " system_mac="54-89-98-FB-75-2B" com_port="0" bootmode="0" cx="262.000000" cy="221.000000" edit_left="289" edit_top="275">
+            <slot number="slot17" isMainBoard="1">
+                <interface sztype="Ethernet" interfacename="Ethernet" count="1" />
+            </slot>
+        </dev>
+    </devices>
+    <lines>
+        <line srcDeviceID="E712C761-EB42-4d48-AEE2-DD8109E77784" destDeviceID="B179C734-D923-4838-955A-85B9FF8BA346">
+            <interfacePair lineName="Copper" srcIndex="2" srcBoundRectIsMoved="0" srcBoundRect_X="474.463531" srcBoundRect_Y="179.887299" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="329.536469" tarBoundRect_Y="233.112701" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+            <interfacePair lineName="CTL" srcIndex="0" srcBoundRectIsMoved="0" srcBoundRect_X="329.536469" srcBoundRect_Y="233.112701" srcOffset_X="0.000000" srcOffset_Y="0.000000" tarIndex="0" tarBoundRectIsMoved="0" tarBoundRect_X="474.463531" tarBoundRect_Y="179.887299" tarOffset_X="0.000000" tarOffset_Y="0.000000" />
+        </line>
+    </lines>
+    <shapes />
+    <txttips>
+        <txttip left="147" top="177" right="355" bottom="194" content="192.168.1.100 255.255.255.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+        <txttip left="419" top="114" right="619" bottom="131" content="192.168.1.50 255.255.255.0" fontname="Consolas" fontstyle="0" editsize="100" txtcolor="-16777216" txtbkcolor="-7278960" charset="1" />
+    </txttips>
+</topo>
